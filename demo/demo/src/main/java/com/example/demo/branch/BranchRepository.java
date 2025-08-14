@@ -21,4 +21,8 @@ public interface BranchRepository extends JpaRepository<Branch, Long> {
     void deleteByNameAndRepo(String name, Repo repo);
 
     Branch findByNameAndRepo(String name, Repo repo);
+
+    Boolean existsByNameAndRepo(String name, Repo repo);
+
+    Boolean existsById(Long id);
 }
