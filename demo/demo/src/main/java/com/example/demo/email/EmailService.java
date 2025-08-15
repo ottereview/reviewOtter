@@ -18,8 +18,7 @@ public class EmailService {
             // 메일 DTO 생성
             EmailResponseDto.EmailMessage emailMessage = EmailResponseDto.EmailMessage.builder()
                     .to(invite.getEmail()).subject("[ottereview] 채팅방 초대: " + invite.getRoomName())
-                    .roomName(invite.getRoomName()).inviterName(invite.getInviterName())
-                    .roomLink(link).build();
+    
 
             // 메일 발송
             emailUtil.sendChatRoomInviteMail(emailMessage, "email/chat-invite");
