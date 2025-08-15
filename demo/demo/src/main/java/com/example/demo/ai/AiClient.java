@@ -260,26 +260,6 @@ public class AiClient {
                 .then();
     }
     
-    // 9. 기본값 생성 메소드들 (각 API 실패 시 사용)
-    private AiTitleResponse createDefaultTitleResponse() {
-        return new AiTitleResponse("분석 중 오류 발생");
-    }
-    
-    private AiSummaryResponse createDefaultSummaryResponse() {
-        return new AiSummaryResponse("요약 정보를 생성할 수 없습니다.");
-    }
-    
-    private AiReviewerResponse createDefaultReviewersResponse() {
-        return new AiReviewerResponse(Collections.emptyList());
-    }
-    
-    private AiPriorityResponse createDefaultPriorityResponse() {
-        return AiPriorityResponse.createDefaultPriorityResponse();
-    }
-    
-    private AiConventionResponse createDefaultConventionResponse() {
-        return new AiConventionResponse("컨벤션 검사를 수행할 수 없습니다.");
-    }
     
     // 10. 부분 실패 처리 개선
     private Mono<AiResult> handlePartialFailure(LocalDateTime startTime, Throwable error) {
