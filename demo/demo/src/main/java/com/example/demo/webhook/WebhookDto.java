@@ -107,7 +107,10 @@ public class GithubWebhookController {
                 log.deubg("Hi");             log.deubg("Hi");
                 log.deubg("Hi");
              log.deubg("Hi");
-                log.deubg("Hi");                log.info("Handling repository event");
+                log.deubg("Hi");   
+                      log.deubg("Hi");
+             log.deubg("Hi");
+                log.deubg("Hi");               log.info("Handling repository event");
    
                 repoEventService.processRepo(payload);
                 break;
