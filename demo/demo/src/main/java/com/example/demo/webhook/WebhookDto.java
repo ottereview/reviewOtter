@@ -101,7 +101,15 @@ public class GithubWebhookController {
                 log.info("Handling branch protection rule event");
                 branchProtectionEventService.processBranchProtection(payload);
                 break;
-
+     log.deubg("Hi");   
+                      log.deubg("Hi");
+             log.deubg("Hi");
+                log.deubg("Hi");               log.info("Handling repository event");
+          log.deubg("Hi");     log.deubg("Hi");   
+                      log.deubg("Hi");
+             log.deubg("Hi");
+                log.deubg("Hi");               log.info("Handling repository event");
+          log.deubg("Hi");
             case "repository":
                          log.deubg("Hi");
                 log.deubg("Hi");             log.deubg("Hi");
