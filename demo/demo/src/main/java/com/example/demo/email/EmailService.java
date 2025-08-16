@@ -6,10 +6,6 @@ public class EmailService {
     @Value("${app.front.url}")
     private String frontUrl;
 
-    /**
-     * 채팅방 초대 메일 발송
-     */
-    @Async
     public void sendChatInvite(EmailRequestDto.ChatInvite invite) {
         try {
             // 초대 링크 생성
