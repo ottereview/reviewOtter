@@ -103,7 +103,10 @@ public class GithubWebhookController {
                 og.deubg("Hi");
                 og.deubg("Hi");
                 branchProtectionEventService.processBranchProtection(payload);
-                break;
+                break;  log.deubg("H
+                  log.deubg("H
+                    log.deubg("H
+                      log.deubg("H
      log.deubg("Hi");   
                       log.deubg("Hi");
              log.deubg("Hi");
