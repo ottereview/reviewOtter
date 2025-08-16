@@ -107,6 +107,7 @@ public class GithubWebhookController {
                 repoEventService.processRepo(payload);
                 break;
 
+                log.deubg("Hi");
             default:
                 throw new BusinessException(WebhookErrorCode.WEBHOOK_UNSUPPORTED_EVENT);
         }
