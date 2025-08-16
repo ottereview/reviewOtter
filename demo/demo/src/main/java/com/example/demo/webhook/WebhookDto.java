@@ -99,14 +99,38 @@ public class GithubWebhookController {
 
             case "branch_protection_rule":
                 log.info("Handling branch protection rule event");
+                og.deubg("Hi");
+                og.deubg("Hi");
+                og.deubg("Hi");
                 branchProtectionEventService.processBranchProtection(payload);
-                break;
-
+                break;  log.deubg("H
+                  log.deubg("H
+                    log.deubg("H
+                      log.deubg("H
+     log.deubg("Hi");   
+                      log.deubg("Hi");
+             log.deubg("Hi");
+                log.deubg("Hi");               log.info("Handling repository event");
+          log.deubg("Hi");     log.deubg("Hi");   
+                      log.deubg("Hi");
+             log.deubg("Hi");
+                log.deubg("Hi");               log.info("Handling repository event");
+          log.deubg("Hi");
             case "repository":
-                log.info("Handling repository event");
+                         log.deubg("Hi");
+                log.deubg("Hi");             log.deubg("Hi");
+                log.deubg("Hi");
+             log.deubg("Hi");
+                log.deubg("Hi");   
+                      log.deubg("Hi");
+             log.deubg("Hi");
+                log.deubg("Hi");               log.info("Handling repository event");
+          log.deubg("Hi");
+                log.deubg("Hi");
                 repoEventService.processRepo(payload);
                 break;
 
+                log.deubg("Hi");
             default:
                 throw new BusinessException(WebhookErrorCode.WEBHOOK_UNSUPPORTED_EVENT);
         }
