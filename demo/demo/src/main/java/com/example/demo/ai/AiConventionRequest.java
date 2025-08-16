@@ -9,7 +9,6 @@ import lombok.AllArgsConstructor;
 @NoArgsConstructor  
 @AllArgsConstructor                                                                            
 @Getter
-@Builder
 public class AiConventionRequest {
     @JsonProperty("repo_id")
     private Long repoId;
