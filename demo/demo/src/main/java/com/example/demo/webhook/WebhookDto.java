@@ -70,11 +70,17 @@ public class GithubWebhookController {
             case "pull_request_review":
                 log.info("Handling pull request review event");
                 reviewEventService.processReviewEvent(payload);
+                // pull_request_review 이벤트는 리뷰 코멘트와 다름
+                // 별도의 처리 로직이 필요할 수 있음
+                log.debug(signature != null ? "Signature: " + signature : "No signature provided");
                 break;
 
             case "pull_request_review_comment":
                 log.info("Handling pull request review event");
                 reviewCommentEventService.processReviewCommentEvent(payload);
+                                // pull_request_review 이벤트는 리뷰 코멘트와 다름
+                // 별도의 처리 로직이 필요할 수 있음
+                log.debug(signature != null ? "Signature: " + signature : "No signature provided");
                 break;
 
             case "installation":
